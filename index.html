@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>ate</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Inicio -->
     <div id="part1">
-        <img id="logo" src="img\LogoBlack.png" alt="erro">
-        <h1 id="Question">Qual sua viagem dos sonhos?</h1> 
+      <img id="logo" src="img\LogoBlack.png" alt="erro" />
+      <h1 id="Question">Qual sua viagem dos sonhos?</h1>
     </div>
 
     <!-- Viagens -->
     <div id="carousel-wrapper">
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="carousel-item"><img src="img\Ny.jpg" alt="Imagem 1"></div>
-                <div class="carousel-item"><img src="img\Orlando.jpeg" alt="Imagem 2"></div>
-                <div class="carousel-item"><img src="img\Japão.jpg" alt="Imagem 3"></div>
-                <div class="carousel-item"><img src="img\Paris.webp" alt="Imagem 4"></div>
-            </div>
-            <button class="prev" onclick="moveSlide(-1)"><</button>
-            <button class="next" onclick="moveSlide(1)">></button>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="img\Ny.jpg" alt="Imagem 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="img\Orlando.jpeg" alt="Imagem 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="img\Japão.jpg" alt="Imagem 3" />
+          </div>
+          <div class="carousel-item">
+            <img src="img\Paris.webp" alt="Imagem 4" />
+          </div>
         </div>
+        <button class="prev" onclick="moveSlide(-1)"><</button>
+        <button class="next" onclick="moveSlide(1)">></button>
+      </div>
     </div>
 
     <!-- Menu Informacional -->
     <div id="part2">
-        <p class="solution"><img id="airplane" src="img\Symbol\airplane.png" class="icone" alt="erro">passagem</p>
-        <p class="solution"><img id="hotel" src="img\Symbol\hotel.png" class="icone" alt="erro"> hospegem</p>
-        <p class="solution"><img id="ticket" src="img\Symbol\ticket.png" class="icone" alt="erro"> ticket</p>
+      <p class="solution">
+        <img
+          id="airplane"
+          src="img\Symbol\airplane.png"
+          class="icone"
+          alt="erro"
+        />passagem
+      </p>
+      <p class="solution">
+        <img id="hotel" src="img\Symbol\hotel.png" class="icone" alt="erro" />
+        hospedagem
+      </p>
+      <p class="solution">
+        <img id="ticket" src="img\Symbol\ticket.png" class="icone" alt="erro" />
+        ticket
+      </p>
     </div>
 
     <!-- formulario -->
     <div id="part3">
-        <h1 id="Check-in">Infome seu gmail para noso agente entra em contato </h1>
-        <form action="https://api.sheetmonkey.io/form/meqJUtvPCkYTor7Pd3zPNX" method="post">
-            <input type="text" placeholder="Nome" name="Name" required> <br>
-            <input type="email" placeholder="email" name="Email" required><br>
-            <input type="number" placeholder="Numero" name="Phone"><br>
-            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-            <button type="submit">Entre em  contato</button>
-        </form>
+      <h1 id="Check-in">
+        Informe seu gmail para nosso agente entra em contato:
+      </h1>
+      <form
+        action="https://api.sheetmonkey.io/form/meqJUtvPCkYTor7Pd3zPNX"
+        method="post"
+      >
+        <input type="text" placeholder="Nome" name="Name" required /> <br />
+        <input type="email" placeholder="email" name="Email" required /><br />
+        <input type="number" placeholder="Numero" name="Phone" /><br />
+        <input
+          type="hidden"
+          name="Created"
+          value="x-sheetmonkey-current-date-time"
+        />
+        <button type="submit">Entre em contato</button>
+      </form>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
